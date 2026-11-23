@@ -1,0 +1,1008 @@
+{
+  "format": "lcir.board",
+  "formatVersion": 16,
+  "id": "scratch",
+  "name": "Untitled board",
+  "components": [
+    {
+      "id": "sevenseg3",
+      "kind": "sevenseg",
+      "pos": {
+        "x": 936,
+        "y": 256
+      },
+      "params": {
+        "common": "cathode"
+      }
+    },
+    {
+      "id": "counter1",
+      "kind": "counter",
+      "pos": {
+        "x": 552,
+        "y": 240
+      },
+      "params": {
+        "width": 4,
+        "pinView": "q=expanded",
+        "clear": "async",
+        "hasLoad": false,
+        "hasEnable": false
+      }
+    },
+    {
+      "id": "74LS481",
+      "kind": "chip",
+      "defId": "74LS48",
+      "pos": {
+        "x": 728,
+        "y": 232
+      }
+    },
+    {
+      "id": "and1",
+      "kind": "and",
+      "pos": {
+        "x": 472,
+        "y": 120
+      }
+    },
+    {
+      "id": "constant1",
+      "kind": "constant",
+      "pos": {
+        "x": 728,
+        "y": 128
+      },
+      "params": {
+        "value": 1,
+        "width": 1
+      }
+    },
+    {
+      "id": "constant2",
+      "kind": "constant",
+      "pos": {
+        "x": 616,
+        "y": 152
+      },
+      "params": {
+        "value": 1,
+        "width": 1
+      }
+    },
+    {
+      "id": "constant3",
+      "kind": "constant",
+      "pos": {
+        "x": 616,
+        "y": 392
+      },
+      "params": {
+        "value": 0,
+        "width": 1
+      }
+    },
+    {
+      "id": "constant5",
+      "kind": "constant",
+      "pos": {
+        "x": 776,
+        "y": 400
+      },
+      "params": {
+        "value": 0,
+        "width": 1
+      }
+    },
+    {
+      "id": "clock1",
+      "kind": "clock",
+      "pos": {
+        "x": 352,
+        "y": 120
+      }
+    },
+    {
+      "id": "sw4",
+      "kind": "toggle",
+      "pos": {
+        "x": 440,
+        "y": 400
+      },
+      "params": {
+        "width": 1,
+        "pinView": "",
+        "initial": 0
+      },
+      "label": "Start&Stop"
+    },
+    {
+      "id": "and3",
+      "kind": "and",
+      "pos": {
+        "x": 472,
+        "y": 328
+      }
+    },
+    {
+      "id": "or2",
+      "kind": "or",
+      "pos": {
+        "x": 416,
+        "y": 248
+      },
+      "params": {
+        "inputs": 2,
+        "width": 1,
+        "pinView": ""
+      }
+    },
+    {
+      "id": "or1",
+      "kind": "or",
+      "pos": {
+        "x": 312,
+        "y": 240
+      }
+    },
+    {
+      "id": "constant8",
+      "kind": "constant",
+      "pos": {
+        "x": 304,
+        "y": 320
+      },
+      "params": {
+        "value": 0,
+        "width": 1
+      }
+    },
+    {
+      "id": "button2",
+      "kind": "button",
+      "pos": {
+        "x": 432,
+        "y": 472
+      },
+      "params": {
+        "bounce": false,
+        "toGround": false
+      },
+      "label": "reset"
+    },
+    {
+      "id": "sevenseg4",
+      "kind": "sevenseg",
+      "pos": {
+        "x": 872,
+        "y": 256
+      },
+      "params": {
+        "common": "cathode"
+      }
+    },
+    {
+      "id": "counter2",
+      "kind": "counter",
+      "pos": {
+        "x": 568,
+        "y": 592
+      },
+      "params": {
+        "width": 4,
+        "pinView": "d=collapsed;q=expanded",
+        "clear": "async",
+        "hasLoad": false,
+        "hasEnable": false
+      }
+    },
+    {
+      "id": "chip1",
+      "kind": "chip",
+      "defId": "74LS48",
+      "pos": {
+        "x": 744,
+        "y": 584
+      }
+    },
+    {
+      "id": "constant10",
+      "kind": "constant",
+      "pos": {
+        "x": 744,
+        "y": 480
+      },
+      "params": {
+        "value": 1,
+        "width": 1
+      }
+    },
+    {
+      "id": "constant11",
+      "kind": "constant",
+      "pos": {
+        "x": 632,
+        "y": 504
+      },
+      "params": {
+        "value": 1,
+        "width": 1
+      }
+    },
+    {
+      "id": "constant12",
+      "kind": "constant",
+      "pos": {
+        "x": 632,
+        "y": 744
+      },
+      "params": {
+        "value": 0,
+        "width": 1
+      }
+    },
+    {
+      "id": "constant13",
+      "kind": "constant",
+      "pos": {
+        "x": 792,
+        "y": 752
+      },
+      "params": {
+        "value": 0,
+        "width": 1
+      }
+    },
+    {
+      "id": "and8",
+      "kind": "and",
+      "pos": {
+        "x": 432,
+        "y": 656
+      }
+    },
+    {
+      "id": "or8",
+      "kind": "or",
+      "pos": {
+        "x": 432,
+        "y": 552
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "w121",
+      "a": {
+        "kind": "pin",
+        "component": "and1",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "clock1",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w123",
+      "a": {
+        "kind": "pin",
+        "component": "and1",
+        "pin": "y"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "clk"
+      },
+      "points": []
+    },
+    {
+      "id": "w125",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "VCC"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant1",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w126",
+      "a": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "com1"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant5",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w127",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "GND"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant3",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w128",
+      "a": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "q0"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "A0"
+      },
+      "points": []
+    },
+    {
+      "id": "w130",
+      "a": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "q2"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "A2"
+      },
+      "points": []
+    },
+    {
+      "id": "w132",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "/LT"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant2",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w133",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "/BI_RBO"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant2",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w134",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "/RBI"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant2",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w135",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "e"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "e"
+      },
+      "points": []
+    },
+    {
+      "id": "w136",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "d"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "d"
+      },
+      "points": []
+    },
+    {
+      "id": "w137",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "c"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "c"
+      },
+      "points": []
+    },
+    {
+      "id": "w138",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "f"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "f"
+      },
+      "points": []
+    },
+    {
+      "id": "w139",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "g"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "g"
+      },
+      "points": []
+    },
+    {
+      "id": "w140",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "a"
+      },
+      "points": []
+    },
+    {
+      "id": "w141",
+      "a": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "b"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg3",
+        "pin": "b"
+      },
+      "points": []
+    },
+    {
+      "id": "w146",
+      "a": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "q1"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "and3",
+        "pin": "b"
+      },
+      "points": []
+    },
+    {
+      "id": "w149",
+      "a": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "clr"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "or2",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w198",
+      "a": {
+        "kind": "pin",
+        "component": "and3",
+        "pin": "y"
+      },
+      "b": {
+        "kind": "junction",
+        "junction": "j8"
+      },
+      "points": []
+    },
+    {
+      "id": "w199",
+      "a": {
+        "kind": "junction",
+        "junction": "j8"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "or2",
+        "pin": "b"
+      },
+      "points": []
+    },
+    {
+      "id": "w152",
+      "a": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "q3"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "A3"
+      },
+      "points": []
+    },
+    {
+      "id": "w153",
+      "a": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "q1"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "74LS481",
+        "pin": "A1"
+      },
+      "points": []
+    },
+    {
+      "id": "w157",
+      "a": {
+        "kind": "pin",
+        "component": "and1",
+        "pin": "b"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sw4",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w150",
+      "a": {
+        "kind": "pin",
+        "component": "or2",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "or1",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w163",
+      "a": {
+        "kind": "pin",
+        "component": "or1",
+        "pin": "b"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant8",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w164",
+      "a": {
+        "kind": "pin",
+        "component": "or1",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "button2",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w167",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "VCC"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant10",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w168",
+      "a": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "com1"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant13",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w169",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "GND"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant12",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w170",
+      "a": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "q0"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "A0"
+      },
+      "points": []
+    },
+    {
+      "id": "w171",
+      "a": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "q2"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "A2"
+      },
+      "points": []
+    },
+    {
+      "id": "w172",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "/LT"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant11",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w173",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "/BI_RBO"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant11",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w174",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "/RBI"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "constant11",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w175",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "e"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "e"
+      },
+      "points": []
+    },
+    {
+      "id": "w176",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "d"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "d"
+      },
+      "points": []
+    },
+    {
+      "id": "w177",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "c"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "c"
+      },
+      "points": []
+    },
+    {
+      "id": "w178",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "f"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "f"
+      },
+      "points": []
+    },
+    {
+      "id": "w179",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "g"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "g"
+      },
+      "points": []
+    },
+    {
+      "id": "w180",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "a"
+      },
+      "points": []
+    },
+    {
+      "id": "w181",
+      "a": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "b"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "sevenseg4",
+        "pin": "b"
+      },
+      "points": []
+    },
+    {
+      "id": "w186",
+      "a": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "q3"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "A3"
+      },
+      "points": []
+    },
+    {
+      "id": "w187",
+      "a": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "q1"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "chip1",
+        "pin": "A1"
+      },
+      "points": []
+    },
+    {
+      "id": "w197",
+      "a": {
+        "kind": "pin",
+        "component": "and3",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "counter1",
+        "pin": "q3"
+      },
+      "points": []
+    },
+    {
+      "id": "w200",
+      "a": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "clk"
+      },
+      "b": {
+        "kind": "junction",
+        "junction": "j8"
+      },
+      "points": []
+    },
+    {
+      "id": "w201",
+      "a": {
+        "kind": "pin",
+        "component": "and8",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "q3"
+      },
+      "points": []
+    },
+    {
+      "id": "w202",
+      "a": {
+        "kind": "pin",
+        "component": "and8",
+        "pin": "b"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "q1"
+      },
+      "points": []
+    },
+    {
+      "id": "w215",
+      "a": {
+        "kind": "pin",
+        "component": "and8",
+        "pin": "y"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "or8",
+        "pin": "b"
+      },
+      "points": []
+    },
+    {
+      "id": "w216",
+      "a": {
+        "kind": "pin",
+        "component": "or8",
+        "pin": "a"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "button2",
+        "pin": "y"
+      },
+      "points": []
+    },
+    {
+      "id": "w217",
+      "a": {
+        "kind": "pin",
+        "component": "or8",
+        "pin": "y"
+      },
+      "b": {
+        "kind": "pin",
+        "component": "counter2",
+        "pin": "clr"
+      },
+      "points": []
+    }
+  ],
+  "junctions": [
+    {
+      "id": "j8",
+      "pos": {
+        "x": 416,
+        "y": 272
+      }
+    }
+  ],
+  "probes": [],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "timing": {
+    "mode": "ideal",
+    "datasheet": "typ",
+    "vendor": "ti"
+  },
+  "runSpeed": 25000
+}
